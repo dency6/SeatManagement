@@ -1,0 +1,227 @@
+:root {
+  --bgPrimary:#edf7ff;
+  --bgSecondary:#FFFFFF;
+  --bgTertiary:#eef8fd;
+  --boxShadow:#13121c;
+  --textPrimary:black;
+  --hover:#ff9238;
+  --hoversecondry:#ff9238c6;
+  --borderBottom:#19a4cf;
+  --inputBorder:#30a3c6;
+  --cards:white;
+  --btnColor:#0f355e;
+}
+.admin-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1.5fr 1.5fr;
+  column-gap: 10px;
+  padding: 5px;
+  margin-top: 5px;
+}
+.admin-content-row {
+  width: 100%;
+  background-color: var(--bgSecondary);
+  height: 87vh;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px var(--boxShadow);
+}
+.content-row-header {
+  height: 40px;
+  text-align: center;
+  padding: 2px 4px;
+  border-bottom: 1px solid var(--borderBottom);
+  display: flex;
+  justify-content: space-evenly;
+}
+.content-row-header div:last-child {
+  margin-left: auto;
+}
+.content-row-header h2 {
+  font-size: 15px
+}
+.table-header {
+  width: 100%;
+  border-bottom: 1px solid var(--borderBottom);
+}
+.table-content {
+  padding: 2px 2px 2px 2px;
+}
+.admin-stats-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.stats-body {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.table-request {
+  width: 100%;
+  display: flex;
+  padding: 5px 5px;
+  justify-content: space-between;
+  background-color: aliceblue;
+  border-bottom: 1px solid var(--borderBottom);
+  box-shadow: 2px 2px 3px var(--boxShadow);
+}
+.request-info {
+  background-color: var(--bgSecondary);
+  padding: 15px;
+  margin: 10px;
+}
+
+.request-info label{
+  margin-top: 5px;
+  margin-bottom: 2px;
+  margin-left: auto;
+  color: var(--btnColor);
+}
+.request-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.email {
+  font-weight: bold;
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: var(--btnColor);
+  font-variant: small-caps;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: center;
+}
+.dropdown-role {
+  display: flex;
+  justify-content: center;
+}
+.dropdown-role select {
+  appearance: none;
+  background-color: var(--bgSecondary);
+  border: 2px solid var(--inputBorder);
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  width: 300px;
+  cursor: pointer;
+}
+
+.dropdown-role select:focus {
+  outline: none;
+  border-color: var(--bgTertiary);
+}
+
+.dropdown-role select option {
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid var(--inputBorder);
+  background-color: var(--bgTertiary);
+  height: 40px;
+}
+
+
+
+
+
+
+/* form
+   */
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+.room-form {
+  padding: 10px 10px 10px 10px;
+  margin: 5px;
+}
+.room-form label {
+  font-size: 15px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+/* 
+stats admin */
+.stat > input[type="date"],
+.stat > select {
+  background-color: var(--bgTertiary);
+  width: 15rem;
+  display: flex;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 4px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--inputBorder);
+  font-size: 16px;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+  text-align: left;
+  font-size: medium;
+  /* margin: auto;
+  position: relative; */
+  margin-right: 6px;
+  margin-left: 4px;
+}
+
+.ad {
+  position: relative;
+  margin-left: 4px;
+}
+#bookingRoom {
+  padding: 10px;
+  border-radius: 10px;
+}
+.admin-request-room-booking{
+display: grid;
+grid-template-columns: auto;
+}
+.dropdown-stats {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fbfbfb;
+  color: #333;
+  /* margin-left: 70px; */
+  
+}
+
+.dropdown-stats option {
+  font-size: 1rem;
+  background-color: #c2c5cf;
+  color: #333;
+}

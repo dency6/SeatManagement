@@ -1,0 +1,120 @@
+:root {
+  --bgPrimary:#edf7ff;
+  --bgSecondary:#FFFFFF;
+  --bgTertiary:#eef8fd;
+  --boxShadow:#13121c;
+  --textPrimary:black;
+  --hover:#ff9238;
+  --hoversecondry:#ff9238c6;
+  --borderBottom:#19a4cf;
+  --inputBorder:#30a3c6;
+  --cards:white;
+  --btnColor:#0f355e;
+}
+.display-seat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 35px;
+  border-radius: 2px;
+}
+.display-area{
+  padding: 2px;
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  color: #130f68;
+  width:50px;
+  height: 35px;
+  text-align: center;
+  cursor:not-allowed;
+  
+}
+
+.display-static-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 20px;
+  
+
+}
+.loc-layout-tables{
+  margin-top: -15px;
+  display: grid;
+  grid-template-rows: .5fr 4.5fr;
+  justify-content: center;
+  height: 62vh;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+.staticLocTable{
+  display: inline-block;
+  border-radius: 5px;
+  max-width: 100%;
+  margin-left: 60px;
+
+  
+}
+.locationTable {
+  display: inline-block;
+  /* border: 1px solid blue; */
+  border-radius: 5px;
+  background-color: #7a9cbc19;
+  
+  
+  /* Set a max-width to prevent horizontal scrolling */
+  max-width: 100%;
+}
+
+/* Style the scrollbar */
+.loc-layout-tables::-webkit-scrollbar {
+  background-color: #d6eaf8;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+/* Style the scrollbar thumb */
+.loc-layout-tables::-webkit-scrollbar-thumb {
+  background-color: #1ba5dc;
+  border-radius: 10px;
+  border: 3px solid #f5f5f5;
+}
+
+/* Style the scrollbar on hover */
+.loc-layout-tables::-webkit-scrollbar-thumb:hover {
+  background-color: #999;
+}
+
+/* Style the scrollbar on active state */
+.loc-layout-tables::-webkit-scrollbar-thumb:active {
+  background-color: #555;
+}
+
+.header {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+  margin-top: -30px;
+  display: flex;
+  justify-content: space-between;
+}
+.header h4{
+  color:#1a498f;
+  text-decoration:double underline;
+}
+.header button {
+  height: 35px;
+  border-radius: 5px;
+}
+
+.date-picker{
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid var(--inputBorder);
+  background-color: var(--bgTertiary);
+  color: black;
+}

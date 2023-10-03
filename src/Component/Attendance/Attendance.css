@@ -1,0 +1,31 @@
+:root {
+  --bgPrimary:#edf7ff;
+  --bgSecondary:#FFFFFF;
+  --bgTertiary:#eef8fd;
+  --boxShadow:#13121c;
+  --textPrimary:black;
+  --hover:#ff9238;
+  --hoversecondry:#ff9238c6;
+  --borderBottom:#19a4cf;
+  --inputBorder:#30a3c6;
+  --cards:white;
+  --btnColor:#0f355e;
+}
+.form-item input[type="file"] {
+  margin-top: 5px;
+  padding: 6px 6px 6px 6px;
+  border-radius: 5px;
+  border: 1px solid var(--inputBorder);
+  height: 22px;
+  background-color: var(--bgTertiary);
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.attendance-form input[type="date"]:hover,
+input[type="date"]:focus,
+input[type="file"]:hover,
+input[type="file"]:focus {
+  border-color: 1px solid var(--inputBorder);
+}
